@@ -1,0 +1,15 @@
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\bin\Debug\Form_01_temel_kontroller.exe.config
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\bin\Debug\Form_01_temel_kontroller.exe
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\bin\Debug\Form_01_temel_kontroller.pdb
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\obj\Debug\Form_01_temel_kontroller.csproj.AssemblyReference.cache
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\obj\Debug\Form_01_temel_kontroller.Form1.resources
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\obj\Debug\Form_01_temel_kontroller.Properties.Resources.resources
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\obj\Debug\Form_01_temel_kontroller.csproj.GenerateResource.cache
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\obj\Debug\Form_01_temel_kontroller.csproj.CoreCompileInputs.cache
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\obj\Debug\Form_01_temel_kontroller.exe
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\obj\Debug\Form_01_temel_kontroller.pdb
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\obj\Debug\Form_01_temel_kontroller.btnSay.resources
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\obj\Debug\Form_01_temel_kontroller.Form3.resources
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\obj\Debug\Form_01_temel_kontroller.Form4.resources
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\obj\Debug\Form_01_temel_kontroller.Form5.resources
+C:\Users\recep\source\repos\Form_01_temel_kontroller\Form_01_temel_kontroller\obj\Debug\Form_01_temel_kontroller.Form6.resources
