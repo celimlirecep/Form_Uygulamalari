@@ -8,3 +8,4 @@ C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_
 C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\obj\Debug\Telefon_Rehberi_V1.csproj.CoreCompileInputs.cache
 C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\obj\Debug\Telefon_Rehberi_V1.exe
 C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\obj\Debug\Telefon_Rehberi_V1.pdb
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\obj\Debug\Telefon_Rehberi_V1.Form2.resources

@@ -32,7 +32,7 @@ namespace Telefon_Rehberi_V1
         void Kisilerigetir()
         {
             baglanti = new SqlConnection(BaglantiCumlesi);
-            
+
             sorguCumlesi = "SELECT * FROM tblKisiler";
             adapter = new SqlDataAdapter(sorguCumlesi,baglanti);
             dt = new DataTable();
