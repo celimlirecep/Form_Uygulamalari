@@ -1,0 +1,13 @@
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\bin\Debug\Form_02_SQL.exe.config
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\bin\Debug\Form_02_SQL.exe
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\bin\Debug\Form_02_SQL.pdb
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\obj\Debug\Form_02_SQL.csproj.AssemblyReference.cache
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\obj\Debug\Form_02_SQL.Form1.resources
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\obj\Debug\Form_02_SQL.Properties.Resources.resources
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\obj\Debug\Form_02_SQL.csproj.GenerateResource.cache
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\obj\Debug\Form_02_SQL.csproj.CoreCompileInputs.cache
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\obj\Debug\Form_02_SQL.exe
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\obj\Debug\Form_02_SQL.pdb
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\obj\Debug\Form_02_SQL.Form2.resources
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\obj\Debug\Form_02_SQL.Form3.resources
+C:\Users\recep\source\repos\Form_02_SQL\Form_02_SQL\obj\Debug\Form_02_SQL.Form4.resources

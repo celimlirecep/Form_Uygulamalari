@@ -1,0 +1,10 @@
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\bin\Debug\Telefon_Rehberi_V1.exe.config
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\bin\Debug\Telefon_Rehberi_V1.exe
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\bin\Debug\Telefon_Rehberi_V1.pdb
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\obj\Debug\Telefon_Rehberi_V1.csproj.AssemblyReference.cache
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\obj\Debug\Telefon_Rehberi_V1.Form1.resources
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\obj\Debug\Telefon_Rehberi_V1.Properties.Resources.resources
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\obj\Debug\Telefon_Rehberi_V1.csproj.GenerateResource.cache
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\obj\Debug\Telefon_Rehberi_V1.csproj.CoreCompileInputs.cache
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\obj\Debug\Telefon_Rehberi_V1.exe
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\Telefon_Rehberi_V1\Telefon_Rehberi_V1\obj\Debug\Telefon_Rehberi_V1.pdb
