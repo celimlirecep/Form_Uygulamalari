@@ -84,12 +84,19 @@ namespace telefon_rehberi_V2
 
         private void sil()
         {
-            
+            String ID = dgvkisiler.CurrentRow.Cells[0].Value.ToString();
+            sqlkomutlari = $"DELETE FROM tblKisiler WHERE ID='{ID}'";
+            baglanti = new SqlConnection(baglantiadresi);
+            komut = new SqlCommand(sqlkomutlari, baglanti);
+            baglanti.Open();
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            kisilerigetir();
         }
 
         private void btnsil_Click(object sender, EventArgs e)
         {
-
+            sil();
         }
     }
 }

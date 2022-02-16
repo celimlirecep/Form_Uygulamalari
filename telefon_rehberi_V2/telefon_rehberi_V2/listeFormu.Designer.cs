@@ -29,6 +29,7 @@ namespace telefon_rehberi_V2
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvkisiler = new System.Windows.Forms.DataGridView();
             this.btnduzelt = new System.Windows.Forms.Button();
             this.btnsil = new System.Windows.Forms.Button();
@@ -48,6 +49,12 @@ namespace telefon_rehberi_V2
             // 
             // dgvkisiler
             // 
+            this.dgvkisiler.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Lime;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Fuchsia;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Lavender;
+            this.dgvkisiler.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvkisiler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvkisiler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvkisiler.Dock = System.Windows.Forms.DockStyle.Top;

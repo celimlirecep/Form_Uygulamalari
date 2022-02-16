@@ -10,3 +10,15 @@ C:\Users\recep\source\repos\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\tele
 C:\Users\recep\source\repos\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\telefon_rehberi_V2.exe
 C:\Users\recep\source\repos\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\telefon_rehberi_V2.pdb
 C:\Users\recep\source\repos\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\telefon_rehberi_V2.listeFormu.resources
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\telefon_rehberi_V2\telefon_rehberi_V2\bin\Debug\telefon_rehberi_V2.exe.config
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\telefon_rehberi_V2\telefon_rehberi_V2\bin\Debug\telefon_rehberi_V2.exe
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\telefon_rehberi_V2\telefon_rehberi_V2\bin\Debug\telefon_rehberi_V2.pdb
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\telefon_rehberi_V2.csproj.AssemblyReference.cache
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\telefon_rehberi_V2.Form1.resources
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\telefon_rehberi_V2.listeFormu.resources
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\telefon_rehberi_V2.Properties.Resources.resources
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\telefon_rehberi_V2.YeniKayitFormu.resources
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\telefon_rehberi_V2.csproj.GenerateResource.cache
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\telefon_rehberi_V2.csproj.CoreCompileInputs.cache
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\telefon_rehberi_V2.exe
+C:\Users\recep\OneDrive\Masaüstü\Form_Uygulamalari\telefon_rehberi_V2\telefon_rehberi_V2\obj\Debug\telefon_rehberi_V2.pdb
