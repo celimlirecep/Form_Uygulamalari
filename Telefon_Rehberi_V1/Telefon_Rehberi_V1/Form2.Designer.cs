@@ -51,6 +51,7 @@ namespace Telefon_Rehberi_V1
             // 
             // dgvKisiler
             // 
+            this.dgvKisiler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvKisiler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKisiler.Location = new System.Drawing.Point(20, 45);
             this.dgvKisiler.Name = "dgvKisiler";

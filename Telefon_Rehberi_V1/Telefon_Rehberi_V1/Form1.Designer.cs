@@ -45,12 +45,13 @@ namespace Telefon_Rehberi_V1
             this.btnDüzelt = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.btnAra = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtara = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKisiler)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvKisiler
             // 
+            this.dgvKisiler.AllowUserToAddRows = false;
             this.dgvKisiler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvKisiler.BackgroundColor = System.Drawing.Color.Wheat;
             this.dgvKisiler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -97,7 +98,7 @@ namespace Telefon_Rehberi_V1
             this.tctAd.Location = new System.Drawing.Point(455, 67);
             this.tctAd.Name = "tctAd";
             this.tctAd.Size = new System.Drawing.Size(100, 20);
-            this.tctAd.TabIndex = 2;
+            this.tctAd.TabIndex = 0;
             // 
             // txtSoyad
             // 
@@ -105,7 +106,7 @@ namespace Telefon_Rehberi_V1
             this.txtSoyad.Location = new System.Drawing.Point(455, 93);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(100, 20);
-            this.txtSoyad.TabIndex = 2;
+            this.txtSoyad.TabIndex = 1;
             // 
             // label7
             // 
@@ -124,7 +125,7 @@ namespace Telefon_Rehberi_V1
             this.rdbKadin.Location = new System.Drawing.Point(455, 122);
             this.rdbKadin.Name = "rdbKadin";
             this.rdbKadin.Size = new System.Drawing.Size(52, 17);
-            this.rdbKadin.TabIndex = 3;
+            this.rdbKadin.TabIndex = 2;
             this.rdbKadin.TabStop = true;
             this.rdbKadin.Text = "Kadın";
             this.rdbKadin.UseVisualStyleBackColor = false;
@@ -167,7 +168,7 @@ namespace Telefon_Rehberi_V1
             this.txtTel.Location = new System.Drawing.Point(455, 142);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(100, 20);
-            this.txtTel.TabIndex = 2;
+            this.txtTel.TabIndex = 4;
             // 
             // btnYeni
             // 
@@ -175,9 +176,10 @@ namespace Telefon_Rehberi_V1
             this.btnYeni.Location = new System.Drawing.Point(360, 188);
             this.btnYeni.Name = "btnYeni";
             this.btnYeni.Size = new System.Drawing.Size(75, 23);
-            this.btnYeni.TabIndex = 4;
+            this.btnYeni.TabIndex = 5;
             this.btnYeni.Text = "Yeni";
             this.btnYeni.UseVisualStyleBackColor = false;
+            this.btnYeni.Click += new System.EventHandler(this.btnYeni_Click);
             // 
             // btnDüzelt
             // 
@@ -185,7 +187,7 @@ namespace Telefon_Rehberi_V1
             this.btnDüzelt.Location = new System.Drawing.Point(441, 188);
             this.btnDüzelt.Name = "btnDüzelt";
             this.btnDüzelt.Size = new System.Drawing.Size(75, 23);
-            this.btnDüzelt.TabIndex = 4;
+            this.btnDüzelt.TabIndex = 6;
             this.btnDüzelt.Text = "Düzelt";
             this.btnDüzelt.UseVisualStyleBackColor = false;
             this.btnDüzelt.Click += new System.EventHandler(this.btnDüzelt_Click);
@@ -196,9 +198,10 @@ namespace Telefon_Rehberi_V1
             this.btnSil.Location = new System.Drawing.Point(522, 188);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(75, 23);
-            this.btnSil.TabIndex = 4;
+            this.btnSil.TabIndex = 7;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = false;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnAra
             // 
@@ -206,17 +209,20 @@ namespace Telefon_Rehberi_V1
             this.btnAra.Location = new System.Drawing.Point(118, 7);
             this.btnAra.Name = "btnAra";
             this.btnAra.Size = new System.Drawing.Size(75, 23);
-            this.btnAra.TabIndex = 5;
+            this.btnAra.TabIndex = 9;
             this.btnAra.Text = "Ara";
             this.btnAra.UseVisualStyleBackColor = false;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
-            // textBox1
+            // txtara
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.textBox1.Location = new System.Drawing.Point(12, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtara.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.txtara.Location = new System.Drawing.Point(12, 7);
+            this.txtara.Name = "txtara";
+            this.txtara.Size = new System.Drawing.Size(100, 20);
+            this.txtara.TabIndex = 8;
+            this.txtara.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtara_KeyPress);
+            this.txtara.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtara_KeyUp);
             // 
             // Form1
             // 
@@ -224,7 +230,7 @@ namespace Telefon_Rehberi_V1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(606, 224);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtara);
             this.Controls.Add(this.btnAra);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnDüzelt);
@@ -269,7 +275,7 @@ namespace Telefon_Rehberi_V1
         private System.Windows.Forms.Button btnDüzelt;
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.Button btnAra;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtara;
     }
 }
 

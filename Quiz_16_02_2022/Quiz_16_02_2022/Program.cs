@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Telefon_Rehberi_V1
+namespace Quiz_16_02_2022
 {
     static class Program
     {

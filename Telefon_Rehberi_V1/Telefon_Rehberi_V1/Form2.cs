@@ -80,7 +80,6 @@ namespace Telefon_Rehberi_V1
             baglanti = new SqlConnection(baglantiAdresi);
             komut = new SqlCommand(Sqlkomutlari,baglanti);
             baglanti.Open();
-            
             komut.ExecuteNonQuery();
             baglanti.Close();
             DataviewKisiler();

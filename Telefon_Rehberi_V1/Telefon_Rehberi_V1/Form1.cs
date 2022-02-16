@@ -19,6 +19,12 @@ namespace Telefon_Rehberi_V1
         string BaglantiCumlesi = @"Server=RECEP-CELIMLI\SQLEXPRESS;Database=sRehber;User=sa;Pwd=123";
         string sorguCumlesi;
         SqlCommand komut;
+        string ID;
+        string ad;
+        string soyad;
+        string tel;
+        char cinsiyet;
+
         public Form1()
         {
             InitializeComponent();
@@ -63,8 +69,8 @@ namespace Telefon_Rehberi_V1
         }
         void duzelt()
         {
-            string ad = tctAd.Text;
-            string soyad = txtSoyad.Text;
+            ad = tctAd.Text;
+            soyad = txtSoyad.Text;
             char cinsiyet;
             if (rdbKadin.Checked==true)
             {
@@ -74,8 +80,8 @@ namespace Telefon_Rehberi_V1
             {
                 cinsiyet = 'E';
             }
-            string tel = txtTel.Text;
-            string ID = lblID.Text;
+             tel = txtTel.Text;
+             ID = lblID.Text;
             sorguCumlesi =$" UPDATE tblKisiler SET  Ad='{ad}',Soyad='{soyad}',Cinsiyet='{cinsiyet}',Telefon='{tel}' WHERE ID ='{ID}'";
 
             baglanti = new SqlConnection(BaglantiCumlesi);
@@ -86,10 +92,109 @@ namespace Telefon_Rehberi_V1
             Kisilerigetir();
 
         }
+   
 
         private void btnDüzelt_Click(object sender, EventArgs e)
         {
             duzelt();
+        }
+
+       
+        void Temizle()
+        {
+            lblID.Text = "Yeni Kayıt";
+            txtSoyad.ResetText();
+            tctAd.ResetText();
+            rdbKadin.Checked = true;
+            txtTel.ResetText();
+            tctAd.Focus();
+        }
+        private  void yeniKayit()
+        {
+            ad = tctAd.Text;
+            soyad = txtSoyad.Text;
+            char cinsiyet;
+            tel = txtTel.Text;
+            if (rdbKadin.Checked == true)
+            {
+                cinsiyet = 'K';
+            }
+            else
+            {
+                cinsiyet = 'E';
+            }
+            if (btnYeni.Text == "kaydet")
+            {
+
+                btnYeni.Text = "yeni";
+                sorguCumlesi = $"INSERT INTO tblKisiler VALUES ('{ad}','{soyad}','{cinsiyet}','{tel}')";
+                baglanti = new SqlConnection(BaglantiCumlesi);
+                komut = new SqlCommand(sorguCumlesi, baglanti);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                Kisilerigetir();
+            }
+            else
+            {
+                //kayıt degerlerinin sıfırlanması - temiz ortam
+                btnYeni.Text = "kaydet";
+                Temizle();
+
+            }
+
+        }
+
+
+        private void btnYeni_Click(object sender, EventArgs e)
+        {
+
+            yeniKayit();
+           
+        }
+        void sil()
+        {
+            string ID=lblID.Text;
+            
+            sorguCumlesi = $"DELETE tblKisiler WHERE ID ={ID}";
+            baglanti = new SqlConnection(BaglantiCumlesi);
+            komut = new SqlCommand(sorguCumlesi, baglanti);
+            baglanti.Open();
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            Kisilerigetir();
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            sil();
+        }
+        private void bul()
+        {
+             string ara = txtara.Text;
+            //sorguCumlesi =$"SELECT * FROM tblKisiler WHERE ad='{}' or soyad='{}' or telno='{}' or cinsiyet='{}' '";
+            DataView dw = dt.DefaultView;
+            dw.RowFilter = $"Ad LIKE '%{ara}%'";
+        }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            bul();
+        }
+
+      
+        private void txtara_KeyUp(object sender, KeyEventArgs e)//basıldığı anda çalışsın
+        {
+            bul();
+        }
+
+        private void txtara_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar==(char)Keys.Enter)
+            {
+                bul();
+            }
+            
         }
     }
 }
