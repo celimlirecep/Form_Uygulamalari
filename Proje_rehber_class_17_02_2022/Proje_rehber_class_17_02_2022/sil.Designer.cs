@@ -63,7 +63,7 @@ namespace Proje_rehber_class_17_02_2022
             this.btncık.Name = "btncık";
             this.btncık.Size = new System.Drawing.Size(156, 50);
             this.btncık.TabIndex = 2;
-            this.btncık.Text = "HOMEPAGE";
+            this.btncık.Text = "ÇIK";
             this.btncık.UseVisualStyleBackColor = true;
             this.btncık.Click += new System.EventHandler(this.btncık_Click);
             // 

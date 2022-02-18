@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="duzenle.cs">
+    <Compile Include="formbolumler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="duzenle.Designer.cs">
-      <DependentUpon>duzenle.cs</DependentUpon>
+    <Compile Include="formbolumler.Designer.cs">
+      <DependentUpon>formbolumler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formdoktorlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formdoktorlar.Designer.cs">
+      <DependentUpon>formdoktorlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formhastalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formhastalar.Designer.cs">
+      <DependentUpon>formhastalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formrandevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formrandevu.Designer.cs">
+      <DependentUpon>formrandevu.cs</DependentUpon>
     </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
@@ -73,8 +91,17 @@
     <Compile Include="YeniKayit.Designer.cs">
       <DependentUpon>YeniKayit.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="duzenle.resx">
-      <DependentUpon>duzenle.cs</DependentUpon>
+    <EmbeddedResource Include="formbolumler.resx">
+      <DependentUpon>formbolumler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formdoktorlar.resx">
+      <DependentUpon>formdoktorlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formhastalar.resx">
+      <DependentUpon>formhastalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formrandevu.resx">
+      <DependentUpon>formrandevu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>

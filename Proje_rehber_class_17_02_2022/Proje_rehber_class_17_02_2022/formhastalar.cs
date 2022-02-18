@@ -11,11 +11,11 @@ using System.Windows.Forms;
 namespace Proje_rehber_class_17_02_2022
 {
     
-    public partial class duzenle : Form
+    public partial class formhastalar : Form
     {
         veritabani vr = new veritabani();
 
-        public duzenle()
+        public formhastalar()
         {
             InitializeComponent();
         }
@@ -24,12 +24,13 @@ namespace Proje_rehber_class_17_02_2022
             string sorgucümlesi = "SELECT * FROM tblHastalar";
             dgvduzeltmetablosu.DataSource = vr.DataGoster(sorgucümlesi);
         }
-
+        //**********************************************************LOAD
         private void duzenle_Load(object sender, EventArgs e)
         {
+
             tablodagöster();
         }
-
+        //
         private void txtcik_Click(object sender, EventArgs e)
         {
             HomePage hp = new HomePage();
@@ -41,7 +42,7 @@ namespace Proje_rehber_class_17_02_2022
         {
             txtcik.PerformClick();
         }
-
+        //************************ TABLODAKİ TEXTLERE VERİ AKTARMA TABLODAN
         void from_tablo_to_text()
         {
             
@@ -58,13 +59,28 @@ namespace Proje_rehber_class_17_02_2022
         {
             from_tablo_to_text();
         }
-
+        //****************************DÜZENLE KOMUTLARININ BULUNDUĞU YER
         private void txtdegistir_Click(object sender, EventArgs e)
         {
             string ID = dgvduzeltmetablosu.CurrentRow.Cells[0].Value.ToString();
             string cinsiyet = cmbcinsiyet.Text == "ERKEK" ? "E" : "K";
-            vr.duzenle(ID,txttc.Text,txtad.Text,txtsoyad.Text,cinsiyet,txtadres.Text,txttelefon.Text,txtmail.Text);
+            string sqlkomutlari = $"UPDATE tblHastalar SET tcno='{txttc.Text}',ad='{txtad.Text}',soyad='{txtsoyad.Text}',cinsiyet='{cinsiyet}', adres='{txtadres.Text}', telefon='{txttelefon.Text}', mail='{txtmail.Text}' WHERE ID='{ID}'";
+            vr.islem(sqlkomutlari);
             tablodagöster();
+        }
+
+        private void btnyenikayit_Click(object sender, EventArgs e)
+        {
+            YeniKayit yk = new YeniKayit();
+            yk.Show();
+            this.Hide();
+        }
+
+        private void btnsil_Click(object sender, EventArgs e)
+        {
+            sil s = new sil();
+            s.Show();
+            this.Hide();
         }
     }
 }

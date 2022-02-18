@@ -26,47 +26,47 @@ namespace Proje_rehber_class_17_02_2022
         private void HomePage_Load(object sender, EventArgs e)
         {
             
-            hastalarigetir();
+           // hastalarigetir();
             
            
         }
         //-----------------------------------------------------HASTALARIGETİR
-        void hastalarigetir()
+       /* void hastalarigetir()
         {
-            string sorgucumlesi = "SELECT * FROM tblHastalar";
+           string sorgucumlesi = "SELECT * FROM tblHastalar";
             dgvHastalar.DataSource = vr.DataGoster(sorgucumlesi);
-        }
+        }*/
         //********************************************** YENİ KAYIT SAYFASİ GİRİS
-        private void btnYenikayit_Click(object sender, EventArgs e)
-        {
-            YeniKayit yk = new YeniKayit();
-            yk.Show();
-            this.Hide();
-
-        }
+      
         // -----------------------------------------------------ANA SAYFAYI KAPATMA
         private void HomePage_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();//***************************************************************
         }
 
-        private void btnduzelt_Click(object sender, EventArgs e)
-        {
-            duzenle dz = new duzenle();
-            dz.Show();
-            this.Hide();
-        }
+       
 
-        private void btnSil_Click(object sender, EventArgs e)
-        {
-            sil s = new sil();
-            s.Show();
-            this.Hide();
-        }
+      
 
-        private void btncik_Click(object sender, EventArgs e)
+        private void btncik_Click(object sender, EventArgs e)//***** PROGRAMDAN ÇIK
         {
             Application.Exit();
+        }
+
+        private void btnHASTALAR_Click(object sender, EventArgs e)
+        {
+          
+            formhastalar dz = new formhastalar();
+            dz.Show();
+            this.Hide();
+
+        }
+
+        private void btnbolum_Click(object sender, EventArgs e)
+        {
+            formbolumler bf = new formbolumler();
+            bf.Show();
+            this.Hide();
         }
     }
 }

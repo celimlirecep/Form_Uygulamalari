@@ -29,94 +29,65 @@ namespace Proje_rehber_class_17_02_2022
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvHastalar = new System.Windows.Forms.DataGridView();
-            this.btnYenikayit = new System.Windows.Forms.Button();
-            this.btnduzelt = new System.Windows.Forms.Button();
-            this.btnSil = new System.Windows.Forms.Button();
+            this.btnHASTALAR = new System.Windows.Forms.Button();
             this.btncik = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHastalar)).BeginInit();
+            this.btnbolum = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // dgvHastalar
+            // btnHASTALAR
             // 
-            this.dgvHastalar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHastalar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dgvHastalar.Location = new System.Drawing.Point(0, 0);
-            this.dgvHastalar.Name = "dgvHastalar";
-            this.dgvHastalar.Size = new System.Drawing.Size(928, 382);
-            this.dgvHastalar.TabIndex = 0;
-            // 
-            // btnYenikayit
-            // 
-            this.btnYenikayit.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btnYenikayit.Location = new System.Drawing.Point(27, 388);
-            this.btnYenikayit.Name = "btnYenikayit";
-            this.btnYenikayit.Size = new System.Drawing.Size(161, 69);
-            this.btnYenikayit.TabIndex = 1;
-            this.btnYenikayit.Text = "YENİKAYIT";
-            this.btnYenikayit.UseVisualStyleBackColor = false;
-            this.btnYenikayit.Click += new System.EventHandler(this.btnYenikayit_Click);
-            // 
-            // btnduzelt
-            // 
-            this.btnduzelt.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btnduzelt.Location = new System.Drawing.Point(279, 388);
-            this.btnduzelt.Name = "btnduzelt";
-            this.btnduzelt.Size = new System.Drawing.Size(161, 69);
-            this.btnduzelt.TabIndex = 1;
-            this.btnduzelt.Text = "DÜZENLE";
-            this.btnduzelt.UseVisualStyleBackColor = false;
-            this.btnduzelt.Click += new System.EventHandler(this.btnduzelt_Click);
-            // 
-            // btnSil
-            // 
-            this.btnSil.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btnSil.Location = new System.Drawing.Point(531, 388);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(161, 69);
-            this.btnSil.TabIndex = 1;
-            this.btnSil.Text = "SİL";
-            this.btnSil.UseVisualStyleBackColor = false;
-            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
+            this.btnHASTALAR.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnHASTALAR.Location = new System.Drawing.Point(27, 23);
+            this.btnHASTALAR.Name = "btnHASTALAR";
+            this.btnHASTALAR.Size = new System.Drawing.Size(161, 69);
+            this.btnHASTALAR.TabIndex = 1;
+            this.btnHASTALAR.Text = "HASTALAR";
+            this.btnHASTALAR.UseVisualStyleBackColor = false;
+            this.btnHASTALAR.Click += new System.EventHandler(this.btnHASTALAR_Click);
             // 
             // btncik
             // 
             this.btncik.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btncik.Location = new System.Drawing.Point(783, 388);
+            this.btncik.Location = new System.Drawing.Point(27, 108);
             this.btncik.Name = "btncik";
-            this.btncik.Size = new System.Drawing.Size(137, 69);
+            this.btncik.Size = new System.Drawing.Size(161, 69);
             this.btncik.TabIndex = 2;
             this.btncik.Text = "QUİT";
             this.btncik.UseVisualStyleBackColor = false;
             this.btncik.Click += new System.EventHandler(this.btncik_Click);
+            // 
+            // btnbolum
+            // 
+            this.btnbolum.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnbolum.Location = new System.Drawing.Point(27, 205);
+            this.btnbolum.Name = "btnbolum";
+            this.btnbolum.Size = new System.Drawing.Size(161, 69);
+            this.btnbolum.TabIndex = 2;
+            this.btnbolum.Text = "BOLUMLER";
+            this.btnbolum.UseVisualStyleBackColor = false;
+            this.btnbolum.Click += new System.EventHandler(this.btnbolum_Click);
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
-            this.ClientSize = new System.Drawing.Size(928, 510);
+            this.ClientSize = new System.Drawing.Size(701, 286);
+            this.Controls.Add(this.btnbolum);
             this.Controls.Add(this.btncik);
-            this.Controls.Add(this.btnSil);
-            this.Controls.Add(this.btnduzelt);
-            this.Controls.Add(this.btnYenikayit);
-            this.Controls.Add(this.dgvHastalar);
+            this.Controls.Add(this.btnHASTALAR);
             this.Name = "HomePage";
             this.Text = "HOMEPAGE";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HomePage_FormClosing);
             this.Load += new System.EventHandler(this.HomePage_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHastalar)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvHastalar;
-        private System.Windows.Forms.Button btnYenikayit;
-        private System.Windows.Forms.Button btnduzelt;
-        private System.Windows.Forms.Button btnSil;
+        private System.Windows.Forms.Button btnHASTALAR;
         private System.Windows.Forms.Button btncik;
+        private System.Windows.Forms.Button btnbolum;
     }
 }
 

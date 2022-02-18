@@ -20,8 +20,8 @@ namespace Proje_rehber_class_17_02_2022
         //-------------------------------ANA SAYFAYA DÖNÜŞ
         private void btnCık_Click(object sender, EventArgs e)
         {
-            HomePage hp = new HomePage();
-            hp.Show();
+            formhastalar dz = new formhastalar();
+            dz.Show();
             this.Hide();
         }
         //----------------------------- ANA SAYFAYA DÖNÜŞ X
@@ -33,10 +33,13 @@ namespace Proje_rehber_class_17_02_2022
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             string cinsiyet = cmbcinsiyet.Text == "ERKEK" ? "E" : "K";
+            string sqlkomutlari = $"INSERT INTO tblHastalar VALUES ('{txttc.Text}','{txtad.Text}','{txtsoyad.Text}','{cinsiyet}','{txtadres.Text}','{txttel.Text}','{txtmail.Text}')";
+
+           
             string yeniKayitEklemeDurumu="Yeni Kayıt Eklenemedi...";
             if (vr.kayitkontrol(txttc.Text,txtad.Text, txtsoyad.Text, cinsiyet))
             {
-               yeniKayitEklemeDurumu= vr.yeniKayitEkle(txttc.Text, txtad.Text, txtsoyad.Text, cinsiyet, txtadres.Text, txttel.Text, txtmail.Text);
+               yeniKayitEklemeDurumu= vr.islem(sqlkomutlari);
             }
             lblYenikayitBidiri.Text = yeniKayitEklemeDurumu;
            

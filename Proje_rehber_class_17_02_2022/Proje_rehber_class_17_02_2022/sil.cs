@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proje_rehber_class_17_02_2022
-{
+{// REHBER UYGULAMASINDAN VERİLERİN SİLİNMESİNİ SAĞLAR
     public partial class sil : Form
     {
         veritabani vr = new veritabani();
@@ -21,8 +21,8 @@ namespace Proje_rehber_class_17_02_2022
 
         private void btncık_Click(object sender, EventArgs e)
         {
-            HomePage HP = new HomePage();
-            HP.Show();
+            formhastalar dz = new formhastalar();
+            dz.Show();
             this.Hide();
         }
 
@@ -41,7 +41,9 @@ namespace Proje_rehber_class_17_02_2022
         private void btnsil_Click(object sender, EventArgs e)
         {
             string ID = dgvsiltablosu.CurrentRow.Cells[0].Value.ToString();
-            vr.dataSil(ID);
+            string sqlkomutlari = $"DELETE FROM tblHastalar WHERE ID='{ID}'";
+            
+            vr.islem(sqlkomutlari);
             datagoster();
 
         }

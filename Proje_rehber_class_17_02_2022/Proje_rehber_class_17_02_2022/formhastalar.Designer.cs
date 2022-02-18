@@ -1,7 +1,7 @@
 ﻿
 namespace Proje_rehber_class_17_02_2022
 {
-    partial class duzenle
+    partial class formhastalar
     {
         /// <summary>
         /// Required designer variable.
@@ -46,6 +46,8 @@ namespace Proje_rehber_class_17_02_2022
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnyenikayit = new System.Windows.Forms.Button();
+            this.btnsil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvduzeltmetablosu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,14 +57,14 @@ namespace Proje_rehber_class_17_02_2022
             this.dgvduzeltmetablosu.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgvduzeltmetablosu.Location = new System.Drawing.Point(0, 0);
             this.dgvduzeltmetablosu.Name = "dgvduzeltmetablosu";
-            this.dgvduzeltmetablosu.Size = new System.Drawing.Size(948, 210);
+            this.dgvduzeltmetablosu.Size = new System.Drawing.Size(948, 399);
             this.dgvduzeltmetablosu.TabIndex = 0;
             this.dgvduzeltmetablosu.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvduzeltmetablosu_CellEnter);
             // 
             // txtdegistir
             // 
             this.txtdegistir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtdegistir.Location = new System.Drawing.Point(33, 231);
+            this.txtdegistir.Location = new System.Drawing.Point(83, 407);
             this.txtdegistir.Name = "txtdegistir";
             this.txtdegistir.Size = new System.Drawing.Size(171, 94);
             this.txtdegistir.TabIndex = 1;
@@ -73,7 +75,7 @@ namespace Proje_rehber_class_17_02_2022
             // txtcik
             // 
             this.txtcik.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtcik.Location = new System.Drawing.Point(33, 352);
+            this.txtcik.Location = new System.Drawing.Point(83, 528);
             this.txtcik.Name = "txtcik";
             this.txtcik.Size = new System.Drawing.Size(171, 105);
             this.txtcik.TabIndex = 1;
@@ -83,35 +85,35 @@ namespace Proje_rehber_class_17_02_2022
             // 
             // txtad
             // 
-            this.txtad.Location = new System.Drawing.Point(473, 267);
+            this.txtad.Location = new System.Drawing.Point(487, 447);
             this.txtad.Name = "txtad";
             this.txtad.Size = new System.Drawing.Size(100, 20);
             this.txtad.TabIndex = 2;
             // 
             // txtsoyad
             // 
-            this.txtsoyad.Location = new System.Drawing.Point(473, 305);
+            this.txtsoyad.Location = new System.Drawing.Point(487, 481);
             this.txtsoyad.Name = "txtsoyad";
             this.txtsoyad.Size = new System.Drawing.Size(100, 20);
             this.txtsoyad.TabIndex = 2;
             // 
             // txtadres
             // 
-            this.txtadres.Location = new System.Drawing.Point(473, 382);
+            this.txtadres.Location = new System.Drawing.Point(487, 550);
             this.txtadres.Name = "txtadres";
             this.txtadres.Size = new System.Drawing.Size(100, 20);
             this.txtadres.TabIndex = 2;
             // 
             // txttelefon
             // 
-            this.txttelefon.Location = new System.Drawing.Point(473, 420);
+            this.txttelefon.Location = new System.Drawing.Point(487, 584);
             this.txttelefon.Name = "txttelefon";
             this.txttelefon.Size = new System.Drawing.Size(100, 20);
             this.txttelefon.TabIndex = 2;
             // 
             // txtmail
             // 
-            this.txtmail.Location = new System.Drawing.Point(473, 458);
+            this.txtmail.Location = new System.Drawing.Point(487, 618);
             this.txtmail.Name = "txtmail";
             this.txtmail.Size = new System.Drawing.Size(100, 20);
             this.txtmail.TabIndex = 2;
@@ -122,14 +124,14 @@ namespace Proje_rehber_class_17_02_2022
             this.cmbcinsiyet.Items.AddRange(new object[] {
             "ERKEK",
             "KADIN"});
-            this.cmbcinsiyet.Location = new System.Drawing.Point(473, 343);
+            this.cmbcinsiyet.Location = new System.Drawing.Point(487, 515);
             this.cmbcinsiyet.Name = "cmbcinsiyet";
             this.cmbcinsiyet.Size = new System.Drawing.Size(100, 21);
             this.cmbcinsiyet.TabIndex = 3;
             // 
             // txttc
             // 
-            this.txttc.Location = new System.Drawing.Point(473, 229);
+            this.txttc.Location = new System.Drawing.Point(487, 413);
             this.txttc.Name = "txttc";
             this.txttc.Size = new System.Drawing.Size(100, 20);
             this.txttc.TabIndex = 2;
@@ -138,7 +140,7 @@ namespace Proje_rehber_class_17_02_2022
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(360, 229);
+            this.label1.Location = new System.Drawing.Point(374, 413);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 20);
             this.label1.TabIndex = 4;
@@ -149,7 +151,7 @@ namespace Proje_rehber_class_17_02_2022
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(360, 267);
+            this.label2.Location = new System.Drawing.Point(374, 447);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 20);
             this.label2.TabIndex = 4;
@@ -160,7 +162,7 @@ namespace Proje_rehber_class_17_02_2022
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(360, 305);
+            this.label3.Location = new System.Drawing.Point(374, 481);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 4;
@@ -171,7 +173,7 @@ namespace Proje_rehber_class_17_02_2022
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(360, 343);
+            this.label4.Location = new System.Drawing.Point(374, 515);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 20);
             this.label4.TabIndex = 4;
@@ -182,7 +184,7 @@ namespace Proje_rehber_class_17_02_2022
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(360, 381);
+            this.label5.Location = new System.Drawing.Point(374, 549);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 20);
             this.label5.TabIndex = 4;
@@ -193,7 +195,7 @@ namespace Proje_rehber_class_17_02_2022
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(360, 419);
+            this.label6.Location = new System.Drawing.Point(374, 583);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 20);
             this.label6.TabIndex = 4;
@@ -204,19 +206,43 @@ namespace Proje_rehber_class_17_02_2022
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(360, 457);
+            this.label7.Location = new System.Drawing.Point(374, 617);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 20);
             this.label7.TabIndex = 4;
             this.label7.Text = "MAİL AD :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // duzenle
+            // btnyenikayit
+            // 
+            this.btnyenikayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnyenikayit.Location = new System.Drawing.Point(688, 409);
+            this.btnyenikayit.Name = "btnyenikayit";
+            this.btnyenikayit.Size = new System.Drawing.Size(155, 94);
+            this.btnyenikayit.TabIndex = 5;
+            this.btnyenikayit.Text = "YENİKAYIT";
+            this.btnyenikayit.UseVisualStyleBackColor = true;
+            this.btnyenikayit.Click += new System.EventHandler(this.btnyenikayit_Click);
+            // 
+            // btnsil
+            // 
+            this.btnsil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnsil.Location = new System.Drawing.Point(688, 539);
+            this.btnsil.Name = "btnsil";
+            this.btnsil.Size = new System.Drawing.Size(155, 94);
+            this.btnsil.TabIndex = 5;
+            this.btnsil.Text = "SİL";
+            this.btnsil.UseVisualStyleBackColor = true;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
+            // 
+            // formhastalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(948, 522);
+            this.ClientSize = new System.Drawing.Size(948, 644);
+            this.Controls.Add(this.btnsil);
+            this.Controls.Add(this.btnyenikayit);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -235,7 +261,7 @@ namespace Proje_rehber_class_17_02_2022
             this.Controls.Add(this.txtdegistir);
             this.Controls.Add(this.dgvduzeltmetablosu);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "duzenle";
+            this.Name = "formhastalar";
             this.Text = "duzenle";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.duzenle_FormClosing);
             this.Load += new System.EventHandler(this.duzenle_Load);
@@ -264,5 +290,7 @@ namespace Proje_rehber_class_17_02_2022
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnyenikayit;
+        private System.Windows.Forms.Button btnsil;
     }
 }

@@ -43,50 +43,60 @@ namespace Proje_rehber_class_17_02_2022
             adapter.Fill(dt);
             return dt;
         }
-
-        public string yeniKayitEkle(string tc, string ad, string soyad, string cinsiyet, string adres , string telefon, string mail)
-        {
-           
-            sqlkomutlari = $"INSERT INTO tblHastalar VALUES ('{tc}','{ad}','{soyad}','{cinsiyet}','{adres}','{telefon}','{mail}')";
-            komut = new SqlCommand(sqlkomutlari, baglan());
-            komut.ExecuteNonQuery();
-            baglantikes();
-            return  " Yeni İsim Başarıyla Kaydedildi...";
-        }
-
         public bool kayitkontrol(params string[] e)//********************************************************************
         {
             bool donus = true;
             foreach (var item in e)
             {
-                
+
                 if (item == "")
                 {
-                    donus= false;
+                    donus = false;
                     break;
                 }
             }
             return donus;
         }
-
-        public void duzenle(string ID,string tc, string ad, string soyad, string cinsiyet, string adres, string telefon, string mail)
+        public string islem(string sqlkomutlari)
         {
-            sqlkomutlari = $"UPDATE tblHastalar SET tcno='{tc}',ad='{ad}',soyad='{soyad}',cinsiyet='{cinsiyet}', adres='{adres}', telefon='{telefon}', mail='{mail}' WHERE ID='{ID}'";
             komut = new SqlCommand(sqlkomutlari, baglan());
             komut.ExecuteNonQuery();
             baglantikes();
-            
+            return "Yapılan İslem Basarili...";
         }
 
-        public void dataSil(string ID)
-        {
-            sqlkomutlari = $"DELETE FROM tblHastalar WHERE ID='{ID}'";
-            komut = new SqlCommand(sqlkomutlari, baglan());
-            komut.ExecuteNonQuery();
-            baglantikes();
-        }
-     
-       
+        /*   public string yeniKayitEkle(string sqlkomutlari)
+           {
+
+               komut = new SqlCommand(sqlkomutlari, baglan());//**********islem komudu ile birlestirildi
+               komut.ExecuteNonQuery();
+               baglantikes();
+               return  " Yeni İsim Başarıyla Kaydedildi...";
+           }*/
+
+
+
+        /*   public void duzenle(string sqlkomutlari)
+           {
+
+               komut = new SqlCommand(sqlkomutlari, baglan());// ***** islem komudu ile birleştirildi
+               komut.ExecuteNonQuery();
+               baglantikes();
+
+           }
+   */
+        /*   public void dataSil(string sqlkomutlari)
+           {
+
+               komut = new SqlCommand(sqlkomutlari, baglan());//******* islem komudu ile birlestirildi
+               komut.ExecuteNonQuery();
+               baglantikes();
+           }*/
+
+
+
+
+
 
 
 
