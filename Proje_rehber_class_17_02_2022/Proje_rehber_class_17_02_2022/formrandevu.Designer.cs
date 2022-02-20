@@ -59,6 +59,7 @@ namespace Proje_rehber_class_17_02_2022
             this.dgvHastalar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvHastalar.Size = new System.Drawing.Size(299, 287);
             this.dgvHastalar.TabIndex = 0;
+            this.dgvHastalar.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHastalar_CellEnter);
             // 
             // label1
             // 
@@ -94,7 +95,7 @@ namespace Proje_rehber_class_17_02_2022
             this.cmbbolum.Name = "cmbbolum";
             this.cmbbolum.Size = new System.Drawing.Size(142, 21);
             this.cmbbolum.TabIndex = 4;
-            this.cmbbolum.SelectedIndexChanged += new System.EventHandler(this.cmbbolum_SelectedIndexChanged);
+            this.cmbbolum.SelectedIndexChanged += new System.EventHandler(this.cmbbolum_SelectedIndexChanged_1);
             // 
             // label3
             // 
@@ -135,6 +136,7 @@ namespace Proje_rehber_class_17_02_2022
             // btnKaydet
             // 
             this.btnKaydet.BackColor = System.Drawing.Color.Sienna;
+            this.btnKaydet.Enabled = false;
             this.btnKaydet.Location = new System.Drawing.Point(347, 276);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(75, 23);
@@ -171,6 +173,7 @@ namespace Proje_rehber_class_17_02_2022
             this.dtpsaat.Name = "dtpsaat";
             this.dtpsaat.Size = new System.Drawing.Size(142, 20);
             this.dtpsaat.TabIndex = 5;
+            this.dtpsaat.ValueChanged += new System.EventHandler(this.dtpsaat_ValueChanged);
             // 
             // formrandevu
             // 
@@ -193,6 +196,7 @@ namespace Proje_rehber_class_17_02_2022
             this.Controls.Add(this.dgvHastalar);
             this.Name = "formrandevu";
             this.Text = "RANDEVU OLUŞTUR";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formrandevu_FormClosing);
             this.Load += new System.EventHandler(this.formrandevu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHastalar)).EndInit();
             this.ResumeLayout(false);

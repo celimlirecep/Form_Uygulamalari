@@ -32,6 +32,8 @@ namespace Proje_rehber_class_17_02_2022
             this.btnHASTALAR = new System.Windows.Forms.Button();
             this.btncik = new System.Windows.Forms.Button();
             this.btnbolum = new System.Windows.Forms.Button();
+            this.btnrandevu = new System.Windows.Forms.Button();
+            this.tblrandevutakip = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnHASTALAR
@@ -67,6 +69,28 @@ namespace Proje_rehber_class_17_02_2022
             this.btnbolum.UseVisualStyleBackColor = false;
             this.btnbolum.Click += new System.EventHandler(this.btnbolum_Click);
             // 
+            // btnrandevu
+            // 
+            this.btnrandevu.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnrandevu.Location = new System.Drawing.Point(215, 23);
+            this.btnrandevu.Name = "btnrandevu";
+            this.btnrandevu.Size = new System.Drawing.Size(161, 69);
+            this.btnrandevu.TabIndex = 1;
+            this.btnrandevu.Text = "RANDEVU AL";
+            this.btnrandevu.UseVisualStyleBackColor = false;
+            this.btnrandevu.Click += new System.EventHandler(this.btnrandevu_Click);
+            // 
+            // tblrandevutakip
+            // 
+            this.tblrandevutakip.BackColor = System.Drawing.Color.SaddleBrown;
+            this.tblrandevutakip.Location = new System.Drawing.Point(215, 108);
+            this.tblrandevutakip.Name = "tblrandevutakip";
+            this.tblrandevutakip.Size = new System.Drawing.Size(161, 69);
+            this.tblrandevutakip.TabIndex = 1;
+            this.tblrandevutakip.Text = "RANDEVU TAKİP";
+            this.tblrandevutakip.UseVisualStyleBackColor = false;
+            this.tblrandevutakip.Click += new System.EventHandler(this.tblrandevutakip_Click);
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -75,6 +99,8 @@ namespace Proje_rehber_class_17_02_2022
             this.ClientSize = new System.Drawing.Size(701, 286);
             this.Controls.Add(this.btnbolum);
             this.Controls.Add(this.btncik);
+            this.Controls.Add(this.tblrandevutakip);
+            this.Controls.Add(this.btnrandevu);
             this.Controls.Add(this.btnHASTALAR);
             this.Name = "HomePage";
             this.Text = "HOMEPAGE";
@@ -88,6 +114,8 @@ namespace Proje_rehber_class_17_02_2022
         private System.Windows.Forms.Button btnHASTALAR;
         private System.Windows.Forms.Button btncik;
         private System.Windows.Forms.Button btnbolum;
+        private System.Windows.Forms.Button btnrandevu;
+        private System.Windows.Forms.Button tblrandevutakip;
     }
 }
 

@@ -68,5 +68,19 @@ namespace Proje_rehber_class_17_02_2022
             bf.Show();
             this.Hide();
         }
+
+        private void btnrandevu_Click(object sender, EventArgs e)
+        {
+            formrandevu FR = new formrandevu();
+            FR.Show();
+            this.Hide();
+        }
+
+        private void tblrandevutakip_Click(object sender, EventArgs e)
+        {
+            form_Randevu_Onizleme ro = new form_Randevu_Onizleme();
+            ro.Show();
+            this.Hide();
+        }
     }
 }

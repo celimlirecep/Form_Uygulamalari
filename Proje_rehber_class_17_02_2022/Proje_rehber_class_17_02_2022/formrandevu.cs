@@ -25,7 +25,7 @@ namespace Proje_rehber_class_17_02_2022
             cmbbolum.DisplayMember = "BOLUMID";
             cmbbolum.ValueMember = "ID";
         }
-        void doktordoldur()
+      void doktordoldur()
         {
             string bolumID = cmbbolum.SelectedValue.ToString();
             sorgucümlesi = $"SELECT * FROM tblDoktorlar WHERE BolumID='{bolumID}'";
@@ -36,9 +36,11 @@ namespace Proje_rehber_class_17_02_2022
 
         private void formrandevu_Load(object sender, EventArgs e)
         {
+            hastadoldur();
             bolumdoldur();
             doktordoldur();
-            hastadoldur();
+
+
         }
         void hastadoldur()
         {
@@ -46,23 +48,14 @@ namespace Proje_rehber_class_17_02_2022
             dgvHastalar.DataSource = vr.DataGoster(sorgucümlesi);
         }
 
-        private void cmbbolum_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                doktordoldur();
-            }
-            catch (Exception)
-            {
-
-               // throw;
-            }
-               
-        }
-
+       
         private void btnCik_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            HomePage hp = new HomePage();
+            hp.Show();
+            this.Hide();
+
+             
         }
 
 
@@ -75,7 +68,49 @@ namespace Proje_rehber_class_17_02_2022
             string saat = dtpsaat.Text;
             sorgucümlesi = $"INSERT INTO tblRandevular VALUES ('{bolumID}','{doktorlarID}','{hastaID}','{tarih}','{saat}')";
             vr.islem(sorgucümlesi);
+         /*   formrandevugoster frg = new formrandevugoster();
+            frg.Show();
+            this.Hide();*/
 
         }
+
+        private void dgvHastalar_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            txthasta.Text = $"{dgvHastalar.CurrentRow.Cells[1].Value.ToString()} {dgvHastalar.CurrentRow.Cells[2].Value.ToString()}";
+            
+        }
+
+        private void cmbbolum_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            try
+            {
+                doktordoldur();
+            }
+            catch (Exception)
+            {
+
+                // throw;
+            }
+        }
+
+        private void formrandevu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            btnCik.PerformClick();
+        }
+
+        void dolumu()
+        {
+            if (vr.kayitkontrol(txthasta.Text, cmbbolum.Text, lstdoktorlar.Text))
+            {
+                btnKaydet.Enabled = true;
+            }
+        }
+
+        private void dtpsaat_ValueChanged(object sender, EventArgs e)
+        {
+                dolumu();
+        }
     }
+
+
 }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formrandevugoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formrandevugoster.Designer.cs">
+      <DependentUpon>formrandevugoster.cs</DependentUpon>
+    </Compile>
     <Compile Include="formbolumler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="formrandevu.Designer.cs">
       <DependentUpon>formrandevu.cs</DependentUpon>
     </Compile>
+    <Compile Include="form_Randevu_Onizleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Randevu_Onizleme.Designer.cs">
+      <DependentUpon>form_Randevu_Onizleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,9 @@
     <Compile Include="YeniKayit.Designer.cs">
       <DependentUpon>YeniKayit.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="formrandevugoster.resx">
+      <DependentUpon>formrandevugoster.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formbolumler.resx">
       <DependentUpon>formbolumler.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formrandevu.resx">
       <DependentUpon>formrandevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Randevu_Onizleme.resx">
+      <DependentUpon>form_Randevu_Onizleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
