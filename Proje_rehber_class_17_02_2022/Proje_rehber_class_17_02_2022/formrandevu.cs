@@ -57,20 +57,41 @@ namespace Proje_rehber_class_17_02_2022
 
              
         }
+        void kaydet()
+        {
+            string bolumID = cmbbolum.SelectedValue.ToString();
+            string doktorlarID = lstdoktorlar.SelectedValue.ToString();
+            string hastaID = dgvHastalar.CurrentRow.Cells[1].Value.ToString();
+
+                 string tarih = dtpTarih.Text;
+            string saat = dtpsaat.Text;
+            sorgucümlesi = $"INSERT INTO tblRandevular VALUES ('{bolumID}','{doktorlarID}','{hastaID}','{tarih}','{saat}')";
+            vr.islem(sorgucümlesi);
+        }
 
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            string bolumID =cmbbolum.SelectedValue.ToString();
-            string doktorlarID =lstdoktorlar.SelectedValue.ToString() ;
-            string hastaID = dgvHastalar.CurrentRow.Cells[0].Value.ToString() ;
-            string tarih =dtpTarih.Text;
-            string saat = dtpsaat.Text;
-            sorgucümlesi = $"INSERT INTO tblRandevular VALUES ('{bolumID}','{doktorlarID}','{hastaID}','{tarih}','{saat}')";
-            vr.islem(sorgucümlesi);
-         /*   formrandevugoster frg = new formrandevugoster();
+            string bolumAD = cmbbolum.Text;
+            string doktorlarAD = lstdoktorlar.Text;
+            string hastaAD = dgvHastalar.CurrentRow.Cells[1].Value.ToString() + " "+dgvHastalar.CurrentRow.Cells[2].Value.ToString();
+            string tarih = dtpTarih.Text;
+            hocarandevuonizleme frg = new hocarandevuonizleme(bolumAD, hastaAD, doktorlarAD, tarih);
             frg.Show();
-            this.Hide();*/
+            
+
+
+
+
+
+
+
+            kaydet();// DİĞER FORMDAN GELEN VERİYE GÖRE KAYDEDİLECEK
+
+            
+            
+            
+           
 
         }
 

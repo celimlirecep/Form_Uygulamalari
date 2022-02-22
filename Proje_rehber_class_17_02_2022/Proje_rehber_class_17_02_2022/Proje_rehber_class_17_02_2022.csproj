@@ -82,6 +82,12 @@
     <Compile Include="form_Randevu_Onizleme.Designer.cs">
       <DependentUpon>form_Randevu_Onizleme.cs</DependentUpon>
     </Compile>
+    <Compile Include="hocarandevuonizleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hocarandevuonizleme.Designer.cs">
+      <DependentUpon>hocarandevuonizleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form_Randevu_Onizleme.resx">
       <DependentUpon>form_Randevu_Onizleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hocarandevuonizleme.resx">
+      <DependentUpon>hocarandevuonizleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>

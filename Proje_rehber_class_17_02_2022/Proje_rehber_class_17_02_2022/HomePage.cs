@@ -41,7 +41,7 @@ namespace Proje_rehber_class_17_02_2022
         // -----------------------------------------------------ANA SAYFAYI KAPATMA
         private void HomePage_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();//***************************************************************
+            btncik.PerformClick();//***************************************************************
         }
 
        
@@ -50,7 +50,7 @@ namespace Proje_rehber_class_17_02_2022
 
         private void btncik_Click(object sender, EventArgs e)//***** PROGRAMDAN ÇIK
         {
-            Application.Exit();
+          System.Environment.Exit(0);
         }
 
         private void btnHASTALAR_Click(object sender, EventArgs e)

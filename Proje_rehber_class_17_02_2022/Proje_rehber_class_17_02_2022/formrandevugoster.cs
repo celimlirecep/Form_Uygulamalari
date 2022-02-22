@@ -14,7 +14,7 @@ namespace Proje_rehber_class_17_02_2022
     public partial class formrandevugoster : Form
     {
         veritabani vr = new veritabani();
-
+        string sorgucumlesi;
         public formrandevugoster()
         {
             InitializeComponent();
@@ -22,13 +22,8 @@ namespace Proje_rehber_class_17_02_2022
 
         private void formrandevugoster_Load(object sender, EventArgs e)
         {
-            string sorgucumlesi = $"SELECT MAX(ID) FROM tblRandevular";
-            vr.islem(sorgucumlesi);
-            lblhastadi.
             
             
-            
-
            // string hastaID
              sorgucumlesi = "USE sHastane " +
                 "SELECT tblBolumler.bolumıd AS 'Bölum Adı',tbldoktorlar.adsoyad AS 'Doktor Adı',tblhastalar.ad+' '+tblhastalar.soyad AS 'Hasta Adı',tblrandevular.tarih AS 'Randevu Tarihi',tblRandevular.SAAT AS 'Randevu Saati'" +
